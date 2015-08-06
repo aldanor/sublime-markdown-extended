@@ -62,6 +62,26 @@
             ]
         },
         {
+            "begin": "^\\s*({:\\s*)",
+            "name": "markup.raw.kramdown",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "(})\\s",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "#kramdown"
+                }
+            ]
+        },
+        {
             "begin": "(```|~~~)\\s*(c)\\s*$",
             "captures": {
                 "1": {
@@ -72,6 +92,32 @@
                 }
             },
             "end": "(\\1)\\n",
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.c"
+                }
+            ]
+        },
+        {
+            "begin": "({%\\s+highlight\\s+)(c)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
             "patterns": [
                 {
@@ -98,6 +144,32 @@
             ]
         },
         {
+            "begin": "({%\\s+highlight\\s+)(cpp)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.c++"
+                }
+            ]
+        },
+        {
             "begin": "(```|~~~)\\s*(coffee|coffeescript)\\s*$",
             "captures": {
                 "1": {
@@ -108,6 +180,32 @@
                 }
             },
             "end": "(\\1)\\n",
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.coffee"
+                }
+            ]
+        },
+        {
+            "begin": "({%\\s+highlight\\s+)(coffee|coffeescript)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
             "patterns": [
                 {
@@ -134,6 +232,32 @@
             ]
         },
         {
+            "begin": "({%\\s+highlight\\s+)(jade)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.jade"
+                }
+            ]
+        },
+        {
             "begin": "(```|~~~)\\s*(css)\\s*$",
             "captures": {
                 "1": {
@@ -144,6 +268,32 @@
                 }
             },
             "end": "(\\1)\\n",
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.css"
+                }
+            ]
+        },
+        {
+            "begin": "({%\\s+highlight\\s+)(css)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
             "patterns": [
                 {
@@ -170,6 +320,32 @@
             ]
         },
         {
+            "begin": "({%\\s+highlight\\s+)(csharp)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.cs"
+                }
+            ]
+        },
+        {
             "begin": "(```|~~~)\\s*(ejs|underscore|lodash)\\s*$",
             "captures": {
                 "1": {
@@ -180,6 +356,32 @@
                 }
             },
             "end": "(\\1)\\n",
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.ejs"
+                }
+            ]
+        },
+        {
+            "begin": "({%\\s+highlight\\s+)(ejs|underscore|lodash)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
             "patterns": [
                 {
@@ -206,6 +408,32 @@
             ]
         },
         {
+            "begin": "({%\\s+highlight\\s+)(diff)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.diff"
+                }
+            ]
+        },
+        {
             "begin": "(```|~~~)\\s*(go|golang)\\s*$",
             "captures": {
                 "1": {
@@ -216,6 +444,32 @@
                 }
             },
             "end": "(\\1)\\n",
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.go"
+                }
+            ]
+        },
+        {
+            "begin": "({%\\s+highlight\\s+)(go|golang)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
             "patterns": [
                 {
@@ -245,6 +499,35 @@
             ]
         },
         {
+            "begin": "({%\\s+highlight\\s+)(hbs|handlebars|html|html5)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "text.html.basic"
+                },
+                {
+                    "include": "text.html.handlebars"
+                }
+            ]
+        },
+        {
             "begin": "(```|~~~)\\s*(java)\\s*$",
             "captures": {
                 "1": {
@@ -255,6 +538,32 @@
                 }
             },
             "end": "(\\1)\\n",
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.java"
+                }
+            ]
+        },
+        {
+            "begin": "({%\\s+highlight\\s+)(java)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
             "patterns": [
                 {
@@ -281,6 +590,32 @@
             ]
         },
         {
+            "begin": "({%\\s+highlight\\s+)(javascript|js)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.js"
+                }
+            ]
+        },
+        {
             "begin": "(```|~~~)\\s*(json)\\s*$",
             "captures": {
                 "1": {
@@ -291,6 +626,32 @@
                 }
             },
             "end": "(\\1)\\n",
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.json"
+                }
+            ]
+        },
+        {
+            "begin": "({%\\s+highlight\\s+)(json)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
             "patterns": [
                 {
@@ -317,6 +678,32 @@
             ]
         },
         {
+            "begin": "({%\\s+highlight\\s+)(julia|jl)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.julia"
+                }
+            ]
+        },
+        {
             "begin": "(```)\\s*(less)\\s*$",
             "captures": {
                 "1": {
@@ -327,6 +714,32 @@
                 }
             },
             "end": "(\\1)\\n",
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.css.less"
+                }
+            ]
+        },
+        {
+            "begin": "({%\\s+highlight\\s+)(less)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
             "patterns": [
                 {
@@ -353,6 +766,32 @@
             ]
         },
         {
+            "begin": "({%\\s+highlight\\s+)(ls|livescript|LiveScript)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.livescript"
+                }
+            ]
+        },
+        {
             "begin": "(```|~~~)\\s*(lua)\\s*$",
             "captures": {
                 "1": {
@@ -363,6 +802,32 @@
                 }
             },
             "end": "(\\1)\\n",
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.lua"
+                }
+            ]
+        },
+        {
+            "begin": "({%\\s+highlight\\s+)(lua)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
             "patterns": [
                 {
@@ -389,6 +854,32 @@
             ]
         },
         {
+            "begin": "({%\\s+highlight\\s+)(md|markdown)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "text.html.markdown"
+                }
+            ]
+        },
+        {
             "begin": "(```|~~~)\\s*(swift)\\s*$",
             "captures": {
                 "1": {
@@ -399,6 +890,32 @@
                 }
             },
             "end": "(\\1)\\n",
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.swift"
+                }
+            ]
+        },
+        {
+            "begin": "({%\\s+highlight\\s+)(swift)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
             "patterns": [
                 {
@@ -425,6 +942,32 @@
             ]
         },
         {
+            "begin": "({%\\s+highlight\\s+)(obj(?:ective\\-|)c)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.objc"
+                }
+            ]
+        },
+        {
             "begin": "(```|~~~)\\s*(obj(?:ective\\-|)c\\+\\+)\\s*$",
             "captures": {
                 "1": {
@@ -435,6 +978,32 @@
                 }
             },
             "end": "(\\1)\\n",
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.objc++"
+                }
+            ]
+        },
+        {
+            "begin": "({%\\s+highlight\\s+)(obj(?:ective\\-|)c\\+\\+)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
             "patterns": [
                 {
@@ -461,6 +1030,32 @@
             ]
         },
         {
+            "begin": "({%\\s+highlight\\s+)(perl)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.perl"
+                }
+            ]
+        },
+        {
             "begin": "(```|~~~)\\s*(php)\\s*$",
             "captures": {
                 "1": {
@@ -471,6 +1066,32 @@
                 }
             },
             "end": "(\\1)\\n",
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.php"
+                }
+            ]
+        },
+        {
+            "begin": "({%\\s+highlight\\s+)(php)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
             "patterns": [
                 {
@@ -497,6 +1118,32 @@
             ]
         },
         {
+            "begin": "({%\\s+highlight\\s+)(python)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.python"
+                }
+            ]
+        },
+        {
             "begin": "(```|~~~)\\s*(ruby)\\s*$",
             "captures": {
                 "1": {
@@ -507,6 +1154,32 @@
                 }
             },
             "end": "(\\1)\\n",
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.ruby"
+                }
+            ]
+        },
+        {
+            "begin": "({%\\s+highlight\\s+)(ruby)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
             "patterns": [
                 {
@@ -533,6 +1206,32 @@
             ]
         },
         {
+            "begin": "({%\\s+highlight\\s+)(rust)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.rust"
+                }
+            ]
+        },
+        {
             "begin": "(```|~~~)\\s*(sass)\\s*$",
             "captures": {
                 "1": {
@@ -543,6 +1242,32 @@
                 }
             },
             "end": "(\\1)\\n",
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.sass"
+                }
+            ]
+        },
+        {
+            "begin": "({%\\s+highlight\\s+)(sass)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
             "patterns": [
                 {
@@ -569,6 +1294,32 @@
             ]
         },
         {
+            "begin": "({%\\s+highlight\\s+)(scala)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.scala"
+                }
+            ]
+        },
+        {
             "begin": "(```|~~~)\\s*(scss)\\s*$",
             "captures": {
                 "1": {
@@ -579,6 +1330,32 @@
                 }
             },
             "end": "(\\1)\\n",
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.scss"
+                }
+            ]
+        },
+        {
+            "begin": "({%\\s+highlight\\s+)(scss)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
             "patterns": [
                 {
@@ -605,6 +1382,32 @@
             ]
         },
         {
+            "begin": "({%\\s+highlight\\s+)(sh|shell|bash)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.shell"
+                }
+            ]
+        },
+        {
             "begin": "(```|~~~)\\s*(sql|ddl|dml)\\s*$",
             "captures": {
                 "1": {
@@ -615,6 +1418,32 @@
                 }
             },
             "end": "(\\1)\\n",
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.sql"
+                }
+            ]
+        },
+        {
+            "begin": "({%\\s+highlight\\s+)(sql|ddl|dml)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
             "patterns": [
                 {
@@ -641,6 +1470,32 @@
             ]
         },
         {
+            "begin": "({%\\s+highlight\\s+)(postgresql|postgres|pgsql)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.pgsql"
+                }
+            ]
+        },
+        {
             "begin": "(```|~~~)\\s*(styl)\\s*$",
             "captures": {
                 "1": {
@@ -651,6 +1506,32 @@
                 }
             },
             "end": "(\\1)\\n",
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.stylus"
+                }
+            ]
+        },
+        {
+            "begin": "({%\\s+highlight\\s+)(styl)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
             "patterns": [
                 {
@@ -677,6 +1558,32 @@
             ]
         },
         {
+            "begin": "({%\\s+highlight\\s+)(swig|liquid)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "text.html.swig"
+                }
+            ]
+        },
+        {
             "begin": "(```|~~~)\\s*(xml)\\s*$",
             "captures": {
                 "1": {
@@ -695,6 +1602,32 @@
             ]
         },
         {
+            "begin": "({%\\s+highlight\\s+)(xml)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "text.xml"
+                }
+            ]
+        },
+        {
             "begin": "(```|~~~)\\s*(yaml)\\s*$",
             "captures": {
                 "1": {
@@ -705,6 +1638,32 @@
                 }
             },
             "end": "(\\1)\\n",
+            "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
+            "patterns": [
+                {
+                    "include": "source.yaml"
+                }
+            ]
+        },
+        {
+            "begin": "({%\\s+highlight\\s+)(yaml)((?:\\s+\\w+)*\\s+%})\\s*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                },
+                "2": {
+                    "name": "variable.language.fenced.markdown"
+                },
+                "3": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
+            "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                }
+            },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
             "patterns": [
                 {
@@ -1341,6 +2300,36 @@
         "separator": {
             "match": "\\G[ ]{,3}([-*_])([ ]{,2}\\1){2,}[ \\t]*$\\n?",
             "name": "meta.separator.markdown"
+        },
+        "kramdown": {
+            "patterns": [
+                {
+                    "match": "(?<=[\\s:])(\\.[\\w\\-_]+)",
+                    "name": "meta.selector.css entity.other.attribute-name.class.css"
+                },
+                {
+                    "match": "(?<=[\\s:])(#[\\w\\-_]+)",
+                    "name": "meta.selector.css entity.other.attribute-name.id.css"
+                },
+                {
+                    "match": "(?<=\\s)([\\w_]+)(=)(\"[^\"]*\")(?=[\\s}])",
+                    "captures": {
+                        "1": {
+                            "name": "meta.property-list.css meta.property-name.css support.type.property-name.css"
+                        },
+                        "2": {
+                            "name": "meta.property-list.css meta.property-value.css punctuation.separator.key-value.css"
+                        },
+                        "3": {
+                            "name": "meta.property-list.css meta.property-value.css string.quoted.double.css"
+                        }
+                    }
+                },
+                {
+                    "match": "(?<=[\\s:])([\\w_]+:)(?=[\\s}])",
+                    "name": "meta.selector.css entity.name.tag.css"
+                }
+            ]
         }
     },
     "scopeName": "text.html.markdown",
