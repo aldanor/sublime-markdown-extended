@@ -2312,7 +2312,7 @@
                     "name": "meta.selector.css entity.other.attribute-name.id.css"
                 },
                 {
-                    "match": "(?<=\\s)([\\w_]+)(=)(\"[^\"]*\")(?=[\\s}])",
+                    "match": "(?<=[\\s:])([\\w_]+)(=)(\"[^\"]*\")(?=[\\s}])",
                     "captures": {
                         "1": {
                             "name": "meta.property-list.css meta.property-name.css support.type.property-name.css"
