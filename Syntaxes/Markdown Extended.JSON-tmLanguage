@@ -66,13 +66,13 @@
             "name": "markup.raw.kramdown",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "(})\\s",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "patterns": [
@@ -103,19 +103,19 @@
             "begin": "({%\\s+highlight\\s+)(c)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -147,19 +147,19 @@
             "begin": "({%\\s+highlight\\s+)(cpp)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -191,19 +191,19 @@
             "begin": "({%\\s+highlight\\s+)(coffee|coffeescript)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -235,19 +235,19 @@
             "begin": "({%\\s+highlight\\s+)(jade)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -279,19 +279,19 @@
             "begin": "({%\\s+highlight\\s+)(css)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -323,19 +323,19 @@
             "begin": "({%\\s+highlight\\s+)(csharp)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -367,19 +367,19 @@
             "begin": "({%\\s+highlight\\s+)(ejs|underscore|lodash)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -411,19 +411,19 @@
             "begin": "({%\\s+highlight\\s+)(diff)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -455,19 +455,19 @@
             "begin": "({%\\s+highlight\\s+)(go|golang)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -502,19 +502,19 @@
             "begin": "({%\\s+highlight\\s+)(hbs|handlebars|html|html5)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -549,19 +549,19 @@
             "begin": "({%\\s+highlight\\s+)(java)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -593,19 +593,19 @@
             "begin": "({%\\s+highlight\\s+)(javascript|js)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -637,19 +637,19 @@
             "begin": "({%\\s+highlight\\s+)(json)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -681,19 +681,19 @@
             "begin": "({%\\s+highlight\\s+)(julia|jl)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -725,19 +725,19 @@
             "begin": "({%\\s+highlight\\s+)(less)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -769,19 +769,19 @@
             "begin": "({%\\s+highlight\\s+)(ls|livescript|LiveScript)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -813,19 +813,19 @@
             "begin": "({%\\s+highlight\\s+)(lua)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -857,19 +857,19 @@
             "begin": "({%\\s+highlight\\s+)(md|markdown)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -901,19 +901,19 @@
             "begin": "({%\\s+highlight\\s+)(swift)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -945,19 +945,19 @@
             "begin": "({%\\s+highlight\\s+)(obj(?:ective\\-|)c)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -989,19 +989,19 @@
             "begin": "({%\\s+highlight\\s+)(obj(?:ective\\-|)c\\+\\+)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -1033,19 +1033,19 @@
             "begin": "({%\\s+highlight\\s+)(perl)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -1077,19 +1077,19 @@
             "begin": "({%\\s+highlight\\s+)(php)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -1121,19 +1121,19 @@
             "begin": "({%\\s+highlight\\s+)(python)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -1165,19 +1165,19 @@
             "begin": "({%\\s+highlight\\s+)(ruby)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -1209,19 +1209,19 @@
             "begin": "({%\\s+highlight\\s+)(rust)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -1253,19 +1253,19 @@
             "begin": "({%\\s+highlight\\s+)(sass)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -1297,19 +1297,19 @@
             "begin": "({%\\s+highlight\\s+)(scala)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -1341,19 +1341,19 @@
             "begin": "({%\\s+highlight\\s+)(scss)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -1385,19 +1385,19 @@
             "begin": "({%\\s+highlight\\s+)(sh|shell|bash)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -1429,19 +1429,19 @@
             "begin": "({%\\s+highlight\\s+)(sql|ddl|dml)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -1473,19 +1473,19 @@
             "begin": "({%\\s+highlight\\s+)(postgresql|postgres|pgsql)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -1517,19 +1517,19 @@
             "begin": "({%\\s+highlight\\s+)(styl)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -1561,19 +1561,19 @@
             "begin": "({%\\s+highlight\\s+)(swig|liquid)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -1605,19 +1605,19 @@
             "begin": "({%\\s+highlight\\s+)(xml)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -1649,19 +1649,19 @@
             "begin": "({%\\s+highlight\\s+)(yaml)((?:\\s+\\w+)*\\s+%})\\s*$",
             "beginCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 },
                 "2": {
                     "name": "variable.language.fenced.markdown"
                 },
                 "3": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "end": "({%\\s+endhighlight\\s+%})\\s*\\n",
             "endCaptures": {
                 "1": {
-                    "name": "meta.block-level.markdown markup.raw.block.markdown"
+                    "name": "comment.block.html"
                 }
             },
             "name": "markup.raw.block.markdown markup.raw.block.fenced.markdown",
@@ -2302,6 +2302,7 @@
             "name": "meta.separator.markdown"
         },
         "kramdown": {
+            "name": "comment.block.html",
             "patterns": [
                 {
                     "match": "(?<=[\\s:])(\\.[\\w\\-_]+)",
@@ -2328,6 +2329,10 @@
                 {
                     "match": "(?<=[\\s:])([\\w_]+:)(?=[\\s}])",
                     "name": "meta.selector.css entity.name.tag.css"
+                },
+                {
+                    "match": "(?<=[\\s:])([^\\s}]+)",
+                    "name": "comment.block.html"
                 }
             ]
         }
